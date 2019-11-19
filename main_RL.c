@@ -4,8 +4,11 @@
 #include <SDL_ttf.h>
 #include "SDL2_gfx/SDL2_gfxPrimitives.h"
 #include "SDL2_gfx/SDL2_framerate.h"
+
+#ifdef WIN32
 #define _WIN32_WINNT 0x0500
 #include <windows.h>
+#endif
 
 #include "structs.h"
 #include "map.h"
@@ -16,7 +19,7 @@ Uint32 time_passed = 0;
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~O~~~~~~~~~~| M A I N |~~~~~~~~~~~O~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 int main(int argc, char *argv[]){
 
-    HWND hwnd_win = GetConsoleWindow();
+    //HWND hwnd_win = GetConsoleWindow();
     //ShowWindow(hwnd_win,SW_HIDE);
     SDL_Window *window;
     SDL_Renderer *renderer;

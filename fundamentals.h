@@ -22,7 +22,7 @@ typedef char bool;
 
 double sq( double a );
 
-int random( int min, int max );
+int rand_int( int min, int max );
 
 float lerp( float start, float stop, float amt );
 
