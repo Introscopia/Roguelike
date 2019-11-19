@@ -14,7 +14,7 @@ double sq( double a ){
     for (int i = 0; i < 7; ++i) printf("%d: %d, ", i+1, co[i] );
     puts(".");
 */
-int random( int min, int max ){
+int rand_int( int min, int max ){
     return (rand() % (max-min)) + min;
 }
 
